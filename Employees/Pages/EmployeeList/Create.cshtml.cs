@@ -17,10 +17,25 @@ namespace Employees.Pages.EmployeeList
             _db = db;
 
         }
+        [BindProperty]
         public Employee Employee { get; set; }
         public void OnGet()
         {
 
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                await _db.Employee.AddAsync(Employee);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
