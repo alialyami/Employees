@@ -23,5 +23,18 @@ namespace Employees.Pages.EmployeeList
             Employees = await _db.Employee.ToListAsync();
 
         }
+
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+            var Employee = await _db.Employee.FindAsync(id);
+            if (Employee== null)
+            {
+                return NotFound();
+            }
+            _db.Employee.Remove(Employee);
+            await _db.SaveChangesAsync();
+
+            return RedirectToPage("Index");
+        }
     }
 }

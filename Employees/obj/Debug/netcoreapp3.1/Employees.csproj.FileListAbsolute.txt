@@ -416,3 +416,4 @@ C:\Users\ali\source\repos\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.
 C:\Users\ali\source\repos\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ali\source\repos\Employees\Employees\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeList\Index.cshtml.g.cs
 C:\Users\ali\source\repos\Employees\Employees\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeList\Create.cshtml.g.cs
+C:\Users\ali\source\repos\Employees\Employees\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeList\Edit.cshtml.g.cs

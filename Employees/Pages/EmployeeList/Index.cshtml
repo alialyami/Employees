@@ -46,8 +46,8 @@
                                 @Html.DisplayFor(m => item.Salary)
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                                <a class="btn btn-success btn-sm text-white">Edit</a>
+                                <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('This employee will be deleted?')" class="btn btn-danger btn-sm">Delete</button>
+                                <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
                             </td>
                         </tr>
                     }
